@@ -22,7 +22,6 @@ if (numberC === 5) {
 } else {
   console.log("not equal");
 }
-
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
 */
@@ -42,13 +41,9 @@ if (numberD % 5) {
 /* SCRIVI QUI LA TUA RISPOSTA */
 let numberX = 3;
 let numberY = 5;
-if (numberX === 8) {
+if (numberX === 8 || numberY === 8) {
   console.log("il valore di uno di essi è uguale a 8");
-} else if (numberY === 8) {
-  console.log("il valore di uno di essi è uguale a 8");
-} else if (numberX + numberY === 8) {
-  console.log("il valore di addizione o sottrazione è uguale a 8");
-} else if (numberX - numberY === 8) {
+} else if (numberX + numberY === 8 || numberX - numberY) {
   console.log("il valore di addizione o sottrazione è uguale a 8");
 }
 
@@ -111,6 +106,12 @@ if (typeof valore === "number") {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let numberH = 10;
+if (numberH % 5) {
+  console.log("il numero è pari");
+} else {
+  console.log("il numero è dispari");
+}
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
@@ -137,19 +138,23 @@ const me = {
 };
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+me.city = "Toronto";
+console.log(me);
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+delete me.lastName;
+console.log(me);
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+delete me.skills.pop();
+console.log(me.skills);
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
